@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWAN.Inc</title>
+    <title>SWAN.Inc+</title>
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/M1Vf3cH/BSLOGO.png">
     <style>
-                @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
-*{
-    color: rgb(255, 255, 255);
-    font-family: "Red Hat Display", sans-serif;
-}
+                            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
         body{
            background-color: #000000;
            color: white;
         }
+        a{
+            text-decoration: white;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+        }
         button{
             width: 6%;
             position: absolute;
-            top: 55%;
-            left: 49.5%;
+            top: 53%;
+            left: 51%;
             padding: 11px 10px;
             background: #8080804d;
             border: none;
@@ -72,33 +73,16 @@
             top: 53%;
             left: 40%;
         }
-        img {
-            width: 23%;
-    position: fixed;
-    top: 6%;
-    left: 3%;
-        }
-        .adder{
-    position: fixed;
-    left: 10%;
-}
-video{
-    width: 44%;
-    /* border: solid 1px gray; */
-    position: fixed;
-    top: -4em;
-    left: -7em;
-    z-index: -1;
-}
         @media screen and (max-width: 768px){
             body{
                 background-size: 102%;
             }
             button{
-                position: absolute;
-                top: 75%;
-                left: 34%;
-                width: 29%;
+                position: fixed;
+        top: 81%;
+        left: 40%;
+        width: 26%;
+        z-index: 100000000;
             }
             .list{
                 position: absolute;
@@ -110,43 +94,22 @@ video{
                 top: 44%;
                 left: 23%;
             }
-            input {
-        padding: 13px 21px;
-        background: #3c3c3c80;
-        outline: none;
-        border: none;
-        color: rgba(255, 255, 255, 0.811);
-        font-size: 15px;
-        position: relative;
-        left: -8%;
-    }
-            img {
-    width: 69%;
-    position: fixed;
-    top: 6%;
-    left: 15%;
-}
-.adder{
-    position: fixed;
-    left: 32%;
-}
+            input{
+                padding: 14px 32px;
+                background: #3c3c3c80;
+                outline: none;
+                border: none;
+                color: rgba(255, 255, 255, 0.811);
+                font-size: 15px;
+                position: relative;
+                left: -5%;
 
-video {
-    width: 141%;
-        position: fixed;
-        top: -14px;
-        left: -75px;
-
-}
+            }
         }
     </style>
 </head>
 <body>
-    <div class="add">
-        <a style="color: #fff;" class="adder">Advertisement</a>
-        <!-- <img src="png\swan.plus.add.png" alt=""> -->
-        <video autoplay muted loop src="png\aboutlabels.mp4"></video>
-    </div>
+    
     <div class="full">
         <form id="list">
             <div class="loginame">
@@ -161,65 +124,42 @@ video {
                 var name = document.getElementById('name').value;
                 if (name == '4279') {
                     alert("Account verified, Welcome LOKESH");
-                    alert("User you already taken subcription, So you can't find your details here");
+                    window.location.href = "users/lokesh.html";
                 } 
-                if (name == '6896') {
+                else if (name == '6896') {
                     alert("Account verified, Welcome RAJU");
-                    alert("User you already taken subcription, So you can't find your details here");
+                    // window.location.href = "users/raju.html";
+                    alert("Your didn't pay for MyFunds view")
                 } 
                 else if (name == '9944') {
                     alert("Account verified, Welcome ADITYA");
-                    alert("User you already taken subcription, So you can't find your details here");
+                    window.location.href = "users/aditya.html";
+                    // alert("Your didn't pay for MyFunds view")
                 } 
                 else if (name == '2768') {
                     alert("Account verified, Welcome PAWAN");
-                    alert("User you already taken subcription, So you can't find your details here");
-                }
-                
-                else if (name == '3247') {
-                    alert("Account verified, Welcome VENNELA");
-                    alert("Your didn't pay for MyFunds view")
-                }
-                else if (name == '1234') {
-                    alert("Account verified, Welcome TEJA");
-                    alert("Your didn't pay for MyFunds view")
-                }
-                else if (name == '9919') {
-                    alert("Account verified, Welcome PHANI");
-                    alert("Your didn't pay for MyFunds view")
-                }
-                else if (name == '1208') {
-                    alert("Account verified, Welcome MOUNIKA");
-                    alert("Your didn't pay for MyFunds view")
-                }
-                else if (name == '9919') {
-                    alert("Account verified, Welcome PHANINDRA");
-                    alert("You didn't use free version of SWAN.Inc, So you can't find your details here");
+                    window.location.href = "users/pavan.html";
+                    // alert("Your didn't pay for MyFunds view")
                 }
                 else if (name == '7777') {
                     alert("Account verified, Welcome BHAVANI");
-                    alert("You didn't use free version of SWAN.Inc, So you can't find your details here");
+                    // window.location.href = "users/bhavani.html";
+                    alert("Your didn't pay for MyFunds view")
                 }
-                else if (name == '1508') {
-                    alert("Account verified, Welcome SAI KUMAR");
-                    window.location.href = "users/saikumar.html";
-                }
-                else{
-                    alert("Invalid code / User taken subscription.");
+                else {
+                    alert("Invalid code. Try again.");
                 }
             });
         </script>
-    </div>
-    <div class="mfv">
-        <a style="    position: fixed;
-        right: 1em;z-index: -100000;bottom: 1em;
-    " id="referral">MyFunds view</a>
-       <script>
-    document.getElementById("referral").addEventListener("click", function(event){
-        event.preventDefault(); 
-        alert("NOTE: You have to pay 30 rs per month for a MyFunds view. After payment only, You will be able to view your amount details.");
-    });
-    </script>
-    </div>
+        <div class="mfv">
+            <a style="z-index: -100000;
+            position: fixed;" id="referral">MyFunds view</a>
+           <script>
+        document.getElementById("referral").addEventListener("click", function(event){
+            event.preventDefault(); 
+            alert("NOTE: You have to pay 20 rs per month for a MyFunds view. After payment only, You will be able to view your amount details.");
+        });
+        </script>
+        </div>
 </body>
 </html>
